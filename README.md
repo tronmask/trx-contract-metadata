@@ -1,8 +1,10 @@
-# Ethereum Contract Metadata [![CircleCI](https://circleci.com/gh/MetaMask/eth-contract-metadata.svg?style=svg)](https://circleci.com/gh/MetaMask/eth-contract-metadata)
+# Tron Contract Metadata [![CircleCI](https://circleci.com/gh/tronmask/trx-contract-metadata.svg?style=svg)](https://circleci.com/gh/tronmask/trx-contract-metadata)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/MetaMask/eth-contract-metadata.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/tronmask/trx-contract-metadata.svg)](https://greenkeeper.io/)
 
-A mapping of checksummed ethereum addresses to metadata, like names, and images of those addresses' logos.
+Port of eth-contract-metadata. Many TRC20 logos can be found at https://github.com/trustwallet/assets/tree/master/blockchains/tron/assets
+
+A mapping of checksummed tron addresses to metadata, like names, and images of those addresses' logos.
 
 All address keys follow the [EIP 55 address checksum format](https://github.com/ethereum/EIPs/issues/55).
 
@@ -10,26 +12,26 @@ This repository is effectively frozen. We recommend that developers of new token
 
 ## Usage
 
-You can install from npm with `npm install eth-contract-metadata` and use it in your code like this:
+You can install from npm with `npm install @tronmask/trx-contract-metadata` and use it in your code like this:
 
 ```javascript
-import contractMap from 'eth-contract-metadata'
-import ethJSUtil from 'ethereumjs-util'
-const { toChecksumAddress } = ethJSUtil
+import contractMap from "@tronmask/trx-contract-metadata";
+import ethJSUtil from "ethereumjs-util";
+const { toChecksumAddress } = ethJSUtil;
 
-function imageElFor (address) {
-  const metadata = contractMap[toChecksumAddress(address)]
+function imageElFor(address) {
+  const metadata = contractMap[toChecksumAddress(address)];
   if (metadata?.logo) {
-    const fileName = metadata.logo
-    const path = `${__dirname}/images/contract/${fileName}`
-    const img = document.createElement('img')
-    img.src = path
-    img.style.width = '100%'
-    return img
+    const fileName = metadata.logo;
+    const path = `${__dirname}/images/contract/${fileName}`;
+    const img = document.createElement("img");
+    img.src = path;
+    img.style.width = "100%";
+    return img;
   }
 }
 
-imageElFor ("0x06012c8cf97BEaD5deAe237070F9587f8E7A266d")
+imageElFor("0x06012c8cf97BEaD5deAe237070F9587f8E7A266d");
 ```
 
 ## Submission Process
@@ -47,8 +49,7 @@ Criteria:
 - PR should include link to official project website referencing the suggested address.
 - Project website should include explanation of project.
 - Project should have clear signs of activity, either traffic on the network, activity on GitHub, or community buzz.
-- Nice to have a verified source code on a block explorer like Etherscan.
-- Must have a ['NEUTRAL' reputation or 'OK' reputation](https://info.etherscan.com/etherscan-token-reputation) on Etherscan.
+- Nice to have a verified source code on a block explorer like Tronscan.
 
 A sample submission:
 

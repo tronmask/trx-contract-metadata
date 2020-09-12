@@ -1,26 +1,26 @@
 {
-  "name": "eth-contract-metadata",
+  "name": "@tronmask/trx-contract-metadata",
   "version": "1.15.0",
-  "description": "A mapping of ethereum contract addresses to broadly accepted icons for those addresses.",
+  "description": "A mapping of tron contract addresses to broadly accepted icons for those addresses.",
   "main": "index.js",
   "scripts": {
     "test": "node test"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/MetaMask/ethereum-contract-icons.git"
+    "url": "git+ssh://git@github.com/tronmask/trx-contract-metadata.git"
   },
   "keywords": [
     "ethereum",
     "contract",
     "icons"
   ],
-  "author": "Dan Finlay <dan@danfinlay.com>",
+  "author": "Kevin Holder <kevholderx@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MetaMask/ethereum-contract-icons/issues"
+    "url": "https://github.com/tronmask/trx-contract-metadata/issues"
   },
-  "homepage": "https://github.com/MetaMask/ethereum-contract-icons#readme",
+  "homepage": "https://github.com/tronmask/trx-contract-metadata#readme",
   "files": [
     "index.js",
     "contract-map.json",
