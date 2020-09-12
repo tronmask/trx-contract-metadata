@@ -1,6 +1,6 @@
 {
   "name": "@tronmask/trx-contract-metadata",
-  "version": "1.15.0",
+  "version": "1.15.1",
   "description": "A mapping of tron contract addresses to broadly accepted icons for those addresses.",
   "main": "index.js",
   "scripts": {
